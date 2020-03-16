@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author syw
  * @date 2020/3/11 - 11:21
- * @Decription Suppose u have a long flowerbed in which some of the plots
+ * @Description Suppose u have a long flowerbed in which some of the plots
  *             are planted and some are not.However,flowers cannot be planted
  *             in adjacent plots - they would compete for water and both would die.
  *

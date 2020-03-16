@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author syw
  * @date 2020/3/13 - 18:25
- * @Decription Given an integer array,find there numbers whose product is maximum
+ * @Description Given an integer array,find there numbers whose product is maximum
  *             and output this product.
  */
 

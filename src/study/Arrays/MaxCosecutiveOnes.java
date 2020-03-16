@@ -2,7 +2,7 @@ package study.Arrays;
 
 /**
  * @ClassName MaxCosecutiveOnes
- * @Decription Give a binary array,find the maximum number of consecutive 1s in the array.
+ * @Description Give a binary array,find the maximum number of consecutive 1s in the array.
  * @Author shiyouwei
  * @Date 13:55 2019/12/16
  */

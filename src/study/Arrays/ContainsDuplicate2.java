@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 /**
  * @ClassName ContainsDuplicate2
- * @Decription Find if the array contains any duplicates(array[i] == array[j]) and  |i-j| <= k.
+ * @Description Find if the array contains any duplicates(array[i] == array[j]) and  |i-j| <= k.
  * @Author shiyouwei
  * @Date 9:54 2019/12/5
  */

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName arrayPairSum
- * @Decription Given an array of 2n integers, your task is to group these integers into n pairs of integers ,
+ * @Description Given an array of 2n integers, your task is to group these integers into n pairs of integers ,
  *             say(a1,b1),(a2,b2)....(an,bn) which makes sum of min(ai,bi)for all i from 1 to n as large as possible.
  * @Author shiyouwei
  * @Date 9:45 2019/12/26

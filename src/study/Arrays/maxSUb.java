@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName maxSUb
- * @Decription TODO
+ * @Description TODO
  * @Author shiyouwei
  * @Date 15:33 2019/11/21
  */

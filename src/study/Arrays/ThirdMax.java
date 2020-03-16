@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 /**
  * @ClassName ThirdMax
- * @Decription Given an non-empty array of integers , return third maximum in this array ,
+ * @Description Given an non-empty array of integers , return third maximum in this array ,
  *             If it does not exist , return the maximum number.The time complexity must be in O(n).
  * @Author shiyouwei
  * @Date 9:51 2019/12/10

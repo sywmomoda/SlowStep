@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName matrixReshape
- * @Decription Given a matrix represented by a two-dimensional array,and two positive integers r and c representing the
+ * @Description Given a matrix represented by a two-dimensional array,and two positive integers r and c representing the
  *             two number and column number of the wanted reshape matrix,respectively.
  * @Author shiyouwei
  * @Date 14:01 2019/12/26

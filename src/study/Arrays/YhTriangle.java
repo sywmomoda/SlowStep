@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @ClassName YhTriangle
- * @Decription 给定一个非负整数n，生成杨辉三角的前n行。
+ * @Description 给定一个非负整数n，生成杨辉三角的前n行。
  * @Author shiyouwei
  * @Date 13:54 2019/11/26
  */

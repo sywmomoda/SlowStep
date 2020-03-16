@@ -2,7 +2,7 @@ package study.Arrays;
 
 /**
  * @ClassName theBestTime2
- * @Decription TODO
+ * @Description TODO
  * @Author shiyouwei
  * @Date 10:55 2019/11/28
  */

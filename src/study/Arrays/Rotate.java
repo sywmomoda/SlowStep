@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName Rotate
- * @Decription Give an array,rotate the array to the right by k steps,where k is non-negative
+ * @Description Give an array,rotate the array to the right by k steps,where k is non-negative
  * @Author shiyouwei
  * @Date 14:53 2019/12/3
  */

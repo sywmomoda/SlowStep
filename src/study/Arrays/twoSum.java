@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 /**
  * @ClassName twoSum
- * @Decription two sum in Ordered Array
+ * @Description two sum in Ordered Array
  * @Author shiyouwei
  * @Date 13:57 2019/11/29
  */

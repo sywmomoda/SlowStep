@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName MissingNumber
- * @Decription Given an array contains n distinct numbers taken from 0,1,2 ... n , find this one that is missing from this array
+ * @Description Given an array contains n distinct numbers taken from 0,1,2 ... n , find this one that is missing from this array
  * @Author shiyouwei
  * @Date 16:44 2019/12/5
  */

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName mergeTwoArrays3
- * @Decription TODO
+ * @Description TODO
  * @Author shiyouwei
  * @Date 9:23 2019/11/26
  */
