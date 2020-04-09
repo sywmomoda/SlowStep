@@ -1,4 +1,4 @@
-package study.Java8New;
+package study.Java8NewFeatures;
 
 
 /**
