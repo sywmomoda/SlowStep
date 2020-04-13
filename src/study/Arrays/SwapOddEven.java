@@ -23,8 +23,9 @@ public class SwapOddEven {
     public static int[] exchange(int[] nums) {
         int i = 0,j = nums.length-1;
         while(i<j){
-            while(nums[i]%2 == 1 && (i<j)) i++;
-            while(nums[j]%2 == 0 && (i<j)) j--;
+            //奇数最后一位一定是1，偶数最后一位一定是0，可使用&运算代替%取余操作
+            while((nums[i]&1) == 1 && (i<j)) i++;
+            while((nums[j]&1) == 0 && (i<j)) j--;
 
             if(i<j){
                 int temp = nums[i];
