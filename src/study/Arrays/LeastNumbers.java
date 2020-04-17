@@ -12,11 +12,18 @@ import java.util.Arrays;
  */
 public class LeastNumbers {
     public static void main(String[] args) {
-        int[] nums = {3,2,1};
-        System.out.println(Arrays.toString(getLeastNumbers(nums,2)));
-        System.out.println(Arrays.toString(getLeastNumbers2(nums,2)));
+        int[] nums = {0,1,2,1};
+        System.out.println(Arrays.toString(getLeastNumbers(nums,1)));
+        System.out.println(Arrays.toString(getLeastNumbers2(nums,1)));
     }
 
+    /**
+     * 直接排序，从前往后取出k个数
+     * 排序所需时间复杂度：O(n log n)，排序所需额外空间复杂度：O(log n)
+     * @param arr
+     * @param k
+     * @return
+     */
     public static int[] getLeastNumbers(int[] arr,int k){
         int[] res = new int[k];
         Arrays.sort(arr);
@@ -26,6 +33,15 @@ public class LeastNumbers {
         return res;
     }
 
+    /**
+     * 快速选择。不断划分，直至左半边元素个数等于 k
+     * 时间复杂度：期望为 O(n)，最坏为 O(n^2)；空间复杂度：期望为 O(log n)，
+     * 递归调用的期望深度为 O(log n)，每层需要的空间为 O(1)，只有常数个变量。
+     * 最坏情况下的空间复杂度为：O(n)，即划分n次，递归调用 n-1 层。
+     * @param arr
+     * @param k
+     * @return
+     */
     public static int[] getLeastNumbers2(int[] arr,int k){
         int left = 0,right = arr.length-1;
         return quickSearch(arr,left,right,k);
@@ -45,16 +61,16 @@ public class LeastNumbers {
         int l = left, r = right;
 
         while(l<r){
-            while(l<r && arr[l]<=pivot) l++;
             while(l<r && arr[r]>=pivot) r--;
+            while(l<r && arr[l]<=pivot) l++;
 
             int temp = arr[l];
             arr[l] = arr[r];
             arr[r] = temp;
         }
 
-        arr[l] = pivot;
         arr[left] = arr[r];
+        arr[r] = pivot;
 
         return r;
     }
