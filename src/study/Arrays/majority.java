@@ -5,11 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @ClassName majority
- * @Decription find the majority element in an array of size n ,
- *             the majority element is the element that appears more than [n/2] times
- * @Author shiyouwei
- * @Date 9:08 2019/12/3
+ * 数组中出现次数超过一半的数字：
+ * 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字
+ * 假设数组非空，且多数元素总是存在
  */
 public class majority {
 
@@ -47,7 +45,9 @@ public class majority {
 
 
     /**
-     * @Description boyer-moore , time complexity:O(n),space complexity:O(1)
+     * boyer-moore , time complexity:O(n),space complexity:O(1)
+     * 摩尔投票法。核心思想为正负抵消，计众数的票数为 +1，非众数的票数为 -1，
+     * 因为众数个数大于一半，所以一定有所有票数和>0。
      * @param a
      * @return res
      * @Date 14:01 2019/12/3
@@ -56,9 +56,11 @@ public class majority {
     public static int morre(int[] a){
         int res = 0,count = 0;
         for (int i : a) {
+            //票数为0后，下一个数为新的众数
             if(count == 0){
                 res = i;
             }
+            //res 与上个数相等，则 count+1，否则 -1
             count += res == i ? 1 :-1;
         }
 
