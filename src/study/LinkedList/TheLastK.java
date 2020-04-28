@@ -85,13 +85,11 @@ public class TheLastK {
         l4.next = l5;
 
         ListNode list = l1;
-        print(list);
-        System.out.println();
+        System.out.println(ListNode.toString(l1));
 
-        print(getKthFromEnd(l1,2));
-        System.out.println();
+        System.out.println(ListNode.toString(getKthFromEnd(l1,2)));
 
-        print(getKthFromEnd2(l1,2));
+        System.out.println(ListNode.toString(getKthFromEnd2(l1,2)));
 
     }
 }

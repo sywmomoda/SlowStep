@@ -1,5 +1,6 @@
 package study.LinkedList;
 
+
 /**
  * @author syw
  * @date 2020/4/11 - 17:49
@@ -11,8 +12,17 @@ public class ListNode {
         val = x;
     }
 
-    @Override
-    public String toString() {
-        return val+" ";
+    public static String toString(ListNode listNode) {
+        if(listNode == null){
+            return "null";
+        }
+        StringBuffer sb = new StringBuffer();
+        while(listNode.next != null){
+            sb.append(listNode.val);
+            sb.append(" -> ");
+            listNode = listNode.next;
+        }
+        sb.append(listNode.val);
+        return sb.toString();
     }
 }
