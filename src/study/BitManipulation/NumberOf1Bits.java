@@ -14,6 +14,8 @@ public class NumberOf1Bits {
         System.out.println(hanmingWeight(n));
         System.out.println(hanmingWeight2(n));
         System.out.println(hanmingWeight3(n));
+        System.out.println(hanmingWeight4(n));
+        System.out.println(hanmingWeight5(n));
     }
 
     /**
@@ -54,5 +56,26 @@ public class NumberOf1Bits {
      */
     public static int hanmingWeight3(int n){
         return Integer.bitCount(n);
+    }
+
+    /**
+     * 请实现一个函数，输入一个整数，输出该数二进制中1的个数
+     */
+    private static int hanmingWeight4(int n){
+        int count = 0;
+        while(n != 0){
+            count += (n&1);
+            n >>>= 1;
+        }
+        return count;
+    }
+
+    private static int hanmingWeight5(int n){
+        int count = 0;
+        while(n != 0){
+            count++;
+            n &= (n-1);
+        }
+        return count;
     }
 }
