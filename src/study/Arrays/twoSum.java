@@ -45,7 +45,8 @@ public class twoSum {
     }
 
     /**
-     * @Description Two Pointers. time complexity:O(n),space complexity:O(1)
+     * Two Pointers. time complexity:O(n),space complexity:O(1)
+     * 双指针，前后双向遍历查找
      * @param a,target
      * @return new int[] {index1+1,index2+1}
      * @Date 14:50 2019/11/29
