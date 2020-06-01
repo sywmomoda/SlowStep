@@ -13,6 +13,8 @@ public class Palindrome {
     public static void main(String[] args) {
         String s = "A man, a plan, a canal: Panama";
         System.out.println(isPalindrome(s));
+        System.out.println(isPalindrome2(s));
+
     }
 
     /**
@@ -27,5 +29,29 @@ public class Palindrome {
         s = s.replaceAll("[^a-z0-9A-Z]","");
         String reverse = String.valueOf(new StringBuffer(s).reverse());
         return s.equalsIgnoreCase(reverse);
+    }
+
+    /**
+     * 正则+双指针
+     * @param s
+     * @return
+     */
+    private static boolean isPalindrome2(String s){
+        if(s == null) return false;
+        if(s.length() == 0) return true;
+
+        s = s.replaceAll("[^a-zA-Z0-9]","");
+        char[] c = s.toUpperCase().toCharArray();
+
+        int i = 0, j =c.length-1;
+        while(i<j){
+            if(c[i] == c[j]){
+                i++;
+                j--;
+            }else{
+                return false;
+            }
+        }
+        return true;
     }
 }
