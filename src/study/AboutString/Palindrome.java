@@ -20,7 +20,6 @@ public class Palindrome {
     /**
      * 正则 + StringBuffer
      * @param s
-     * @return
      */
     private static boolean isPalindrome(String s){
         if(s == null) return false;
@@ -34,7 +33,6 @@ public class Palindrome {
     /**
      * 正则+双指针
      * @param s
-     * @return
      */
     private static boolean isPalindrome2(String s){
         if(s == null) return false;
